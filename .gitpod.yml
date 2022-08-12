@@ -6,9 +6,10 @@ tasks:
      npm install
     command: |
      gp env SugconAnzSxaURL=$(gp url 3000)
-     sed i '/^PUBLIC_URL=/s/=.*/="SugconAnxSxaURL"/' .env
-     sed i "s@SugconAnxSxaURL@${SugconAnxSxaURL}@g" .env
+     sed i '/^PUBLIC_URL=/s/=.*/="SugconAnzSxaURL"/' .env
+     sed i "s@SugconAnzSxaURL@${SugconAnzSxaURL}@g" .env
      npm run start:connected
+     gp sync-done sugcon-anz
   - name: echo 'init sugcon eu' # runs during prebuild
     before: |
      cd src/Project/Sugcon/SugconEuSxa
@@ -18,6 +19,7 @@ tasks:
      gp env SugconEuSxaURL=$(gp url 3001)
      sed -i '/^PUBLIC_URL=/s/=.*/="SugconEuSxaURL"/' .env
      sed -i "s@SugconEuSxaURL@${SugconEuSxaURL}@g" .env
+     gp sync-await sugcon-anz
      npm run start:connected
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
