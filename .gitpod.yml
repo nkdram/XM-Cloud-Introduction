@@ -1,7 +1,5 @@
 tasks:
-  - name: echo 'init sugcon anz' # runs during prebuild    
-    env:
-      PUBLIC_URL:'$(gp url 3000)'
+  - name: echo 'init sugcon anz' # runs during prebuild
     before: |
      cd src/Project/Sugcon/SugconAnzSxa
     init: |
@@ -9,9 +7,7 @@ tasks:
     command: |
      gp env SugconAnzSxaURL=$(gp url 3000)
      npm run start:connected
-  - name: echo 'init sugcon eu' # runs during prebuild    
-    env:
-      PUBLIC_URL:'$(gp url 3001)'
+  - name: echo 'init sugcon eu' # runs during prebuild
     before: |
      cd src/Project/Sugcon/SugconEuSxa
     init: |
