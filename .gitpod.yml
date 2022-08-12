@@ -1,14 +1,14 @@
 tasks:
   - name: echo 'init sugcon anz' # runs during prebuild
     before: |
-     cd ./src/Project/Sugcon/SugconAnzSxa
+     cd src/Project/Sugcon/SugconAnzSxa
     init: |
      echo npm install
     command: |
      echo npm run start:connected
   - name: echo 'init sugcon eu' # runs during prebuild
     before: |
-     cd ./src/Project/Sugcon/SugconEUSxa
+     cd src/Project/Sugcon/SugconEuSxa
     init: |
      echo npm install
     command: |
