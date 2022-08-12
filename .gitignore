@@ -62,3 +62,5 @@ packages/
 
 .vercel
 xmcloud.plugin.pre-release.json
+src/Project/Sugcon/SugconAnzSxa/.env
+src/Project/Sugcon/SugconEuSxa/.env
