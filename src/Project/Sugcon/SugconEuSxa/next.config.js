@@ -3,7 +3,7 @@ const packageConfig = require('./package.json').config;
 const { getPublicUrl } = require('@sitecore-jss/sitecore-jss-nextjs');
 const plugins = require('./src/temp/next-config-plugins') || {};
 
-const publicUrl = getPublicUrl() ?? process.env.SugconEuSxaURL;
+const publicUrl = process.env.SugconEuSxaURL ?? getPublicUrl();
 
 const nextConfig = {
   // Set assetPrefix to our public URL
