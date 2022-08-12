@@ -24,9 +24,9 @@ export const Default = (props: ComponentData): JSX.Element => {
 
   return (
     <div className="container component">
-      <h1 className="p-3">
+      <h3 className="p-3">
         <Text field={props?.fields?.Title} />
-      </h1>
+      </h3>
       <div dangerouslySetInnerHTML={{ __html: externalData as string }} />
     </div>
   );
