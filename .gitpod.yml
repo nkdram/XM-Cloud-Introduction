@@ -4,6 +4,8 @@ tasks:
      cd src/Project/Sugcon/SugconAnzSxa
     init: |
      npm install
+    env:
+      PUBLIC_URL:$(gp url 3000)
     command: |
      gp env SugconAnzSxaURL=$(gp url 3000)
      npm run start:connected
@@ -12,6 +14,8 @@ tasks:
      cd src/Project/Sugcon/SugconEuSxa
     init: |
      npm install
+    env:
+      PUBLIC_URL:$(gp url 3001)
     command: |
      gp env SugconEuSxaURL=$(gp url 3001)
      npm run start:connected
