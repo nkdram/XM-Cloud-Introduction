@@ -1,10 +1,8 @@
 tasks:
-  - init: echo 'init sugcon eu' # runs during prebuild
-    command: sh ./src/Project/Sugcon/SugconEuSxa/init.sh
-    openMode: tab-after
-  - init: echo 'init sugcon eu' # runs during prebuild
-    command: sh ./src/Project/Sugcon/SugconAnzSxa/init.sh
-    openMode: tab-after
+  - name: echo 'init sugcon eu' # runs during prebuild
+    init: sh ./src/Project/Sugcon/SugconEuSxa/init.sh
+  - name: echo 'init sugcon eu' # runs during prebuild
+    init: sh ./src/Project/Sugcon/SugconAnzSxa/init.sh
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
   - port: 3000
