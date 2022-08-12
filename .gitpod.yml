@@ -5,7 +5,7 @@ tasks:
     init: |
      npm install
     command: |
-     gp env SugconAnzSxaURL=$(gp url 3000)
+     SugconAnzSxaURL=$(gp url 3000)
      sed -i '/^PUBLIC_URL=/s/=.*/="SugconAnzSxaURL"/' .env
      sed -i "s@SugconAnzSxaURL@${SugconAnzSxaURL}@g" .env
      gp sync-done sugcon-anz
@@ -18,7 +18,7 @@ tasks:
      gp sync-await sugcon-anz
      npm install
     command: |     
-     gp env SugconEuSxaURL=$(gp url 3001)
+     SugconEuSxaURL=$(gp url 3001)
      sed -i '/^PUBLIC_URL=/s/=.*/="SugconEuSxaURL"/' .env
      sed -i "s@SugconEuSxaURL@${SugconEuSxaURL}@g" .env
      npm run start:connected
