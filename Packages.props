@@ -20,7 +20,7 @@
     <PackageReference Update="Sitecore.Assemblies.SitecoreHeadlessServicesServer" Version="19.*" />
 
     <!-- Rendering Host -->
-    <PackageReference Update="BuildWebCompiler" Version="1.12.405" />
+    <PackageReference Update="Excubo.WebCompiler" Version="3.3.64-preview.1" />
     <PackageReference Update="GraphQL.Client" Version="4.0.2" />
     <PackageReference Update="GraphQL.Client.Serializer.Newtonsoft" Version="4.0.2" />
     <PackageReference Update="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="$(DotNetVersion)" />

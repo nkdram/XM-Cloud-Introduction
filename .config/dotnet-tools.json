@@ -7,6 +7,12 @@
       "commands": [
         "sitecore"
       ]
+    },
+    "excubo.webcompiler": {
+      "version": "3.3.64-preview.1",
+      "commands": [
+        "webcompiler"
+      ]
     }
   }
 }
