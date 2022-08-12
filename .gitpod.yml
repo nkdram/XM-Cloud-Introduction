@@ -6,6 +6,7 @@ tasks:
      npm install
     command: |
      gp env SugconAnzSxaURL=$(gp url 3000)
+     gp env PUBLIC_URL=$(gp url 3000)
      npm run start:connected
   - name: echo 'init sugcon eu' # runs during prebuild
     before: |
@@ -14,6 +15,7 @@ tasks:
      npm install
     command: |
      gp env SugconEuSxaURL=$(gp url 3001)
+     gp env PUBLIC_URL=$(gp url 3001)
      npm run start:connected
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
